@@ -1,0 +1,78 @@
+{
+  "training_date": "2025-09-21T21:08:12.300096",
+  "models_trained": [
+    "ingredient_classifier",
+    "allergy_predictor",
+    "risk_assessor"
+  ],
+  "datasets": {
+    "ingredient_classification": {
+      "samples": 5000,
+      "features": [
+        "ingredients",
+        "category",
+        "ingredient_count",
+        "has_allergens"
+      ],
+      "categories": {
+        "dairy": 2884,
+        "meat": 734,
+        "bakery": 538,
+        "seafood": 498,
+        "snacks": 56,
+        "canned": 55,
+        "frozen": 54,
+        "fruits": 53,
+        "vegetables": 51,
+        "condiments": 43,
+        "beverages": 34
+      }
+    },
+    "allergy_prediction": {
+      "samples": 3000,
+      "features": [
+        "user_allergies",
+        "user_age",
+        "user_severity",
+        "product_ingredients",
+        "allergen_matches",
+        "risk_score",
+        "risk_level",
+        "safe_to_consume"
+      ],
+      "risk_distribution": {
+        "low": 2326,
+        "medium": 386,
+        "high": 176,
+        "severe": 112
+      }
+    },
+    "risk_assessment": {
+      "samples": 2000,
+      "features": [
+        "allergen_count",
+        "cross_contamination_risk",
+        "processing_facility_shared",
+        "user_sensitivity",
+        "risk_score",
+        "risk_level",
+        "recommendation"
+      ],
+      "recommendations": {
+        "avoid": 1337,
+        "caution": 361,
+        "safe": 302
+      }
+    }
+  },
+  "performance_metrics": {
+    "ingredient_classifier_accuracy": 0.948,
+    "allergy_predictor_mse": 0.108,
+    "risk_assessor_f1_score": 0.854
+  },
+  "model_files": [
+    "models/ingredient_classifier.joblib",
+    "models/allergy_predictor.joblib",
+    "models/risk_assessor.joblib"
+  ]
+}

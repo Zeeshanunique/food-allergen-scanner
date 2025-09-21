@@ -1,0 +1,100 @@
+{
+  "major_allergens": {
+    "peanuts": {
+      "category": "legume",
+      "severity": "high",
+      "alternative_names": ["groundnut", "arachis oil", "peanut oil"],
+      "hidden_sources": ["natural flavoring", "protein bars", "asian cuisine"],
+      "symptoms": ["anaphylaxis", "hives", "difficulty breathing"],
+      "alternatives": ["sunflower seed butter", "soy butter", "pea butter"]
+    },
+    "tree_nuts": {
+      "category": "nuts",
+      "severity": "high",
+      "types": ["almonds", "walnuts", "cashews", "hazelnuts", "pecans", "pistachios", "brazil nuts", "macadamias"],
+      "hidden_sources": ["natural flavoring", "marzipan", "nougat", "praline"],
+      "symptoms": ["anaphylaxis", "hives", "swelling"],
+      "alternatives": ["seeds", "coconut", "sunflower butter"]
+    },
+    "milk": {
+      "category": "dairy",
+      "severity": "moderate",
+      "alternative_names": ["casein", "whey", "lactose", "lactalbumin", "lactoglobulin"],
+      "hidden_sources": ["natural flavoring", "caramel coloring", "high protein flour"],
+      "symptoms": ["digestive issues", "hives", "respiratory problems"],
+      "alternatives": ["almond milk", "oat milk", "coconut milk", "soy milk"]
+    },
+    "eggs": {
+      "category": "protein",
+      "severity": "moderate",
+      "alternative_names": ["albumin", "globulin", "lecithin", "lysozyme", "ovalbumin"],
+      "hidden_sources": ["pasta", "marshmallows", "vaccines", "wine"],
+      "symptoms": ["skin reactions", "digestive issues", "respiratory problems"],
+      "alternatives": ["flax eggs", "chia eggs", "applesauce", "aquafaba"]
+    },
+    "fish": {
+      "category": "seafood",
+      "severity": "moderate",
+      "types": ["salmon", "tuna", "cod", "halibut", "sardines", "anchovies"],
+      "hidden_sources": ["worcestershire sauce", "caesar dressing", "imitation crab"],
+      "symptoms": ["hives", "digestive issues", "anaphylaxis"],
+      "alternatives": ["plant-based proteins", "chicken", "beef"]
+    },
+    "shellfish": {
+      "category": "seafood",
+      "severity": "high",
+      "types": ["shrimp", "crab", "lobster", "oysters", "mussels", "scallops", "clams"],
+      "hidden_sources": ["surimi", "bouillabaisse", "fish stock"],
+      "symptoms": ["anaphylaxis", "hives", "swelling"],
+      "alternatives": ["fish", "plant-based seafood", "chicken"]
+    },
+    "wheat": {
+      "category": "grain",
+      "severity": "moderate",
+      "alternative_names": ["gluten", "semolina", "spelt", "kamut", "bulgur"],
+      "hidden_sources": ["soy sauce", "modified food starch", "malt"],
+      "symptoms": ["digestive issues", "skin problems", "respiratory issues"],
+      "alternatives": ["rice flour", "almond flour", "quinoa flour", "oat flour"]
+    },
+    "soy": {
+      "category": "legume",
+      "severity": "low",
+      "alternative_names": ["lecithin", "tofu", "miso", "tempeh", "edamame"],
+      "hidden_sources": ["natural flavoring", "vegetable oil", "vitamin E"],
+      "symptoms": ["digestive issues", "skin reactions"],
+      "alternatives": ["pea protein", "coconut products", "other legumes"]
+    },
+    "sesame": {
+      "category": "seed",
+      "severity": "moderate",
+      "alternative_names": ["tahini", "sesame oil", "gomasio"],
+      "hidden_sources": ["bread", "crackers", "processed foods"],
+      "symptoms": ["anaphylaxis", "hives", "digestive issues"],
+      "alternatives": ["sunflower seeds", "pumpkin seeds", "other seed butters"]
+    }
+  },
+  "cross_contamination_risks": {
+    "peanuts": ["tree_nuts", "soy_products"],
+    "tree_nuts": ["peanuts", "seeds"],
+    "dairy": ["eggs", "meat_products"],
+    "wheat": ["oats", "other_grains"],
+    "shellfish": ["fish", "mollusks"]
+  },
+  "severity_scale": {
+    "high": {
+      "description": "Can cause severe, life-threatening reactions",
+      "response": "Avoid completely, carry emergency medication",
+      "examples": ["peanuts", "tree nuts", "shellfish"]
+    },
+    "moderate": {
+      "description": "Can cause significant discomfort and health issues",
+      "response": "Avoid and monitor carefully",
+      "examples": ["milk", "eggs", "fish", "wheat"]
+    },
+    "low": {
+      "description": "May cause mild to moderate reactions",
+      "response": "Monitor and limit exposure",
+      "examples": ["soy", "certain food additives"]
+    }
+  }
+}

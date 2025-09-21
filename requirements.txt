@@ -1,0 +1,35 @@
+# AI Food Allergen Scanner - Optimized Requirements
+# Only includes dependencies that are actually used in the codebase
+
+# Core Web Framework
+gradio>=4.0.0
+
+# Image Processing & Computer Vision (for barcode scanning)
+opencv-python>=4.8.0
+pillow>=10.0.0
+
+# Barcode Processing (optional - graceful fallback if unavailable)
+pyzbar>=0.1.9
+
+# HTTP Requests (for external APIs)
+requests>=2.31.0
+
+# Data Processing
+numpy>=1.24.0
+pandas>=2.0.0
+
+# Additional Utilities
+json5>=0.9.14
+
+# REMOVED - Heavy dependencies that are NOT actually used:
+# scikit-learn>=1.3.0          # Not actually used in current ML implementation
+# tensorflow>=2.13.0           # Not used - custom ML models are rule-based
+# transformers>=4.30.0         # Not used - no transformer models
+# torch>=2.0.0                 # Not used - no PyTorch models
+# matplotlib>=3.7.0            # Not used - no plotting in current code  
+# seaborn>=0.12.0              # Not used - no statistical plotting
+# plotly>=5.15.0               # Not used - no interactive plotting
+# streamlit>=1.25.0            # Not used - using Gradio instead
+# python-barcode>=0.15.1       # Not used - using pyzbar for scanning
+# qrcode>=7.4.2                # Not used - no QR code generation
+# sqlite3                      # Built into Python standard library

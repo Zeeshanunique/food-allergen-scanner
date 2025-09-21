@@ -1,0 +1,179 @@
+{
+  "common_medications": {
+    "blood_thinners": {
+      "warfarin": {
+        "generic_names": ["coumadin", "jantoven"],
+        "avoid_foods": ["vitamin k rich foods", "green leafy vegetables", "broccoli", "spinach", "kale"],
+        "caution_foods": ["alcohol", "cranberry juice", "grapefruit"],
+        "interactions": {
+          "vitamin_k": {
+            "severity": "high",
+            "effect": "Reduces medication effectiveness",
+            "foods": ["spinach", "kale", "broccoli", "brussels sprouts", "lettuce"]
+          }
+        },
+        "timing": "consistent vitamin K intake recommended"
+      }
+    },
+    "pain_relievers": {
+      "aspirin": {
+        "avoid_foods": ["alcohol"],
+        "caution_foods": ["vitamin e supplements", "omega-3 supplements", "garlic supplements"],
+        "interactions": {
+          "alcohol": {
+            "severity": "high",
+            "effect": "Increased bleeding risk and stomach irritation"
+          }
+        }
+      }
+    },
+    "diabetes_medications": {
+      "metformin": {
+        "generic_names": ["glucophage", "fortamet"],
+        "avoid_foods": ["excessive alcohol"],
+        "caution_foods": ["high carbohydrate foods", "sugary drinks"],
+        "interactions": {
+          "alcohol": {
+            "severity": "moderate",
+            "effect": "Risk of lactic acidosis"
+          }
+        }
+      },
+      "insulin": {
+        "caution_foods": ["alcohol", "high sugar foods", "caffeine"],
+        "interactions": {
+          "alcohol": {
+            "severity": "moderate",
+            "effect": "Can cause dangerous blood sugar drops"
+          }
+        },
+        "timing": "coordinate with meal times"
+      }
+    },
+    "heart_medications": {
+      "lisinopril": {
+        "generic_names": ["prinivil", "zestril"],
+        "avoid_foods": ["potassium supplements", "salt substitutes"],
+        "caution_foods": ["bananas", "oranges", "potatoes", "tomatoes"],
+        "interactions": {
+          "potassium": {
+            "severity": "moderate",
+            "effect": "Can cause dangerous potassium levels",
+            "foods": ["bananas", "oranges", "potatoes", "spinach"]
+          }
+        }
+      },
+      "digoxin": {
+        "generic_names": ["lanoxin"],
+        "avoid_foods": ["licorice", "st johns wort"],
+        "caution_foods": ["high fiber foods", "bran"],
+        "interactions": {
+          "licorice": {
+            "severity": "high",
+            "effect": "Can cause dangerous heart rhythm changes"
+          }
+        }
+      }
+    },
+    "cholesterol_medications": {
+      "simvastatin": {
+        "generic_names": ["zocor"],
+        "avoid_foods": ["grapefruit", "grapefruit juice"],
+        "caution_foods": ["red yeast rice", "niacin", "alcohol"],
+        "interactions": {
+          "grapefruit": {
+            "severity": "high",
+            "effect": "Increases drug levels and toxicity risk"
+          }
+        }
+      }
+    },
+    "thyroid_medications": {
+      "levothyroxine": {
+        "generic_names": ["synthroid", "levoxyl"],
+        "avoid_foods": ["soy products", "coffee within 1 hour", "calcium supplements"],
+        "caution_foods": ["iron supplements", "high fiber foods"],
+        "timing": "take 30-60 minutes before eating",
+        "interactions": {
+          "soy": {
+            "severity": "moderate",
+            "effect": "Reduces medication absorption"
+          }
+        }
+      }
+    },
+    "antibiotics": {
+      "tetracycline": {
+        "avoid_foods": ["dairy products", "calcium supplements", "iron supplements"],
+        "caution_foods": ["antacids", "aluminum", "magnesium"],
+        "timing": "take 1 hour before or 2 hours after meals",
+        "interactions": {
+          "dairy": {
+            "severity": "moderate",
+            "effect": "Significantly reduces antibiotic absorption"
+          }
+        }
+      },
+      "ciprofloxacin": {
+        "avoid_foods": ["dairy products", "caffeine"],
+        "caution_foods": ["calcium supplements", "antacids"],
+        "interactions": {
+          "caffeine": {
+            "severity": "moderate",
+            "effect": "Increases caffeine effects and side effects"
+          }
+        }
+      }
+    },
+    "antidepressants": {
+      "ssri": {
+        "medications": ["sertraline", "fluoxetine", "escitalopram"],
+        "caution_foods": ["alcohol", "high sodium foods"],
+        "interactions": {
+          "alcohol": {
+            "severity": "moderate",
+            "effect": "Increased drowsiness and impaired coordination"
+          }
+        }
+      },
+      "maoi": {
+        "avoid_foods": ["aged cheeses", "wine", "beer", "soy sauce", "pickled foods", "smoked meats"],
+        "caution_foods": ["chocolate", "caffeine", "fava beans"],
+        "interactions": {
+          "tyramine": {
+            "severity": "high",
+            "effect": "Can cause dangerous blood pressure spikes",
+            "foods": ["aged cheese", "wine", "soy sauce", "pickled foods"]
+          }
+        }
+      }
+    }
+  },
+  "interaction_categories": {
+    "absorption": {
+      "description": "Foods that affect how medications are absorbed",
+      "examples": ["dairy with antibiotics", "fiber with digoxin"]
+    },
+    "metabolism": {
+      "description": "Foods that affect how medications are broken down",
+      "examples": ["grapefruit with statins", "alcohol with various medications"]
+    },
+    "effectiveness": {
+      "description": "Foods that enhance or reduce medication effects",
+      "examples": ["vitamin K with warfarin", "soy with thyroid medications"]
+    },
+    "side_effects": {
+      "description": "Foods that increase medication side effects",
+      "examples": ["caffeine with stimulants", "alcohol with depressants"]
+    }
+  },
+  "timing_guidelines": {
+    "empty_stomach": ["levothyroxine", "certain antibiotics"],
+    "with_food": ["aspirin", "metformin"],
+    "avoid_within_hours": {
+      "dairy_antibiotics": 2,
+      "coffee_levothyroxine": 1,
+      "iron_calcium": 2
+    }
+  }
+}

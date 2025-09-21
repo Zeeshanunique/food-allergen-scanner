@@ -1,0 +1,151 @@
+{
+  "healthcare_providers": {
+    "general_practitioners": [
+      {
+        "id": "gp_001",
+        "name": "Dr. Sarah Johnson",
+        "specialty": "Family Medicine",
+        "phone": "+1-555-0123",
+        "email": "dr.johnson@healthcenter.com",
+        "address": "123 Health Street, Medical Center",
+        "availability": {
+          "monday": "9:00-17:00",
+          "tuesday": "9:00-17:00",
+          "wednesday": "9:00-17:00",
+          "thursday": "9:00-17:00",
+          "friday": "9:00-17:00"
+        },
+        "languages": ["English"],
+        "accepts_emergency": false,
+        "telemedicine": true
+      }
+    ],
+    "allergists": [
+      {
+        "id": "allerg_001",
+        "name": "Dr. Michael Chen",
+        "specialty": "Allergy & Immunology",
+        "phone": "+1-555-0124",
+        "email": "dr.chen@allergyspecialist.com",
+        "address": "456 Allergy Lane, Specialist Center",
+        "availability": {
+          "monday": "8:00-16:00",
+          "wednesday": "8:00-16:00",
+          "friday": "8:00-16:00"
+        },
+        "languages": ["English", "Mandarin"],
+        "accepts_emergency": false,
+        "telemedicine": true,
+        "specializations": ["Food allergies", "Environmental allergies", "Anaphylaxis management"]
+      }
+    ],
+    "emergency_physicians": [
+      {
+        "id": "emerg_001",
+        "name": "Dr. Emily Rodriguez",
+        "specialty": "Emergency Medicine",
+        "phone": "+1-555-0911",
+        "email": "emergency@hospital.com",
+        "address": "789 Emergency Way, City Hospital",
+        "availability": {
+          "24_7": true
+        },
+        "languages": ["English", "Spanish"],
+        "accepts_emergency": true,
+        "telemedicine": false
+      }
+    ],
+    "pharmacists": [
+      {
+        "id": "pharm_001",
+        "name": "PharmD Lisa Wang",
+        "specialty": "Clinical Pharmacy",
+        "phone": "+1-555-0125",
+        "email": "lisa.wang@pharmacy.com",
+        "address": "321 Pharmacy Blvd, Community Pharmacy",
+        "availability": {
+          "monday": "8:00-20:00",
+          "tuesday": "8:00-20:00",
+          "wednesday": "8:00-20:00",
+          "thursday": "8:00-20:00",
+          "friday": "8:00-20:00",
+          "saturday": "8:00-18:00"
+        },
+        "languages": ["English"],
+        "accepts_emergency": false,
+        "telemedicine": true,
+        "specializations": ["Medication interactions", "Drug therapy management"]
+      }
+    ]
+  },
+  "emergency_contacts": {
+    "emergency_services": {
+      "name": "Emergency Services",
+      "phone": "911",
+      "available": "24/7",
+      "type": "emergency"
+    },
+    "poison_control": {
+      "name": "Poison Control Center",
+      "phone": "1-800-222-1222",
+      "available": "24/7",
+      "type": "poison_emergency"
+    },
+    "nurse_hotline": {
+      "name": "24/7 Nurse Hotline",
+      "phone": "+1-555-NURSE",
+      "available": "24/7",
+      "type": "medical_advice"
+    }
+  },
+  "hospitals": [
+    {
+      "name": "City General Hospital",
+      "address": "123 Hospital Drive, Your City",
+      "phone": "+1-555-0911",
+      "emergency_dept": true,
+      "allergy_specialists": true,
+      "distance_miles": 2.5
+    },
+    {
+      "name": "Regional Medical Center",
+      "address": "456 Medical Plaza, Your City",
+      "phone": "+1-555-0912",
+      "emergency_dept": true,
+      "allergy_specialists": false,
+      "distance_miles": 4.1
+    }
+  ],
+  "consultation_types": {
+    "emergency": {
+      "description": "Life-threatening allergic reactions",
+      "response_time": "immediate",
+      "contact_method": "911",
+      "priority": 1
+    },
+    "urgent": {
+      "description": "Severe symptoms requiring prompt attention",
+      "response_time": "15-30 minutes",
+      "contact_method": "emergency_line",
+      "priority": 2
+    },
+    "allergy_consultation": {
+      "description": "Specialized allergy assessment and management",
+      "response_time": "1-2 hours",
+      "contact_method": "specialist_direct",
+      "priority": 3
+    },
+    "general_consultation": {
+      "description": "General health questions and concerns",
+      "response_time": "2-4 hours",
+      "contact_method": "telemedicine",
+      "priority": 4
+    },
+    "medication_review": {
+      "description": "Medication interaction concerns",
+      "response_time": "1-2 hours",
+      "contact_method": "pharmacist_direct",
+      "priority": 4
+    }
+  }
+}
